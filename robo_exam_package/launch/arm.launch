@@ -1,0 +1,24 @@
+<launch>
+
+  <arg name="model" default="$(find robo_exam_package)/urdf/robot_description.urdf.xacro"/>  
+  <arg name="gui" default="True" />
+
+  <param name="robot_description" command="xacro $(arg model)" />
+  <param name="use_gui" value="$(arg gui)"/>
+
+  <!--!!!! inserire di seguito i comandi per il lancio dei nodi con eventuali argomenti-->
+  
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"/>
+  <node name="robot_state_publisher"     pkg="robot_state_publisher"     type="robot_state_publisher"    />
+  <node name="rviz"		         pkg="rviz"		         type="rviz"             args="-d $(find robo_exam_package)/rviz/arm_description.rviz"        />
+ 
+  <!--
+  1) Nodo joint_state_publisher_gui:  https://wiki.ros.org/joint_state_publisher
+  2) Nodo Robot State publisher : http://wiki.ros.org/robot_state_publisher/Tutorials/Using%20the%20robot%20state%20publisher%20on%20your%20own%20robot
+  3) Opzionale: nodo Rviz
+  4) Bonus: nodo trasformata tra World-ef
+  Templates Node example
+  <node name="" pkg="" type="" args="" />
+  <node name="" pkg="" type="" />
+  !!!!-->
+</launch>
