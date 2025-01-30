@@ -42,17 +42,21 @@ Il progetto è organizzato come segue:<br>
    cd ~/catkin_ws/src
    git clone <repository_url>
 2. Compila il pacchetto:
+   ```bash 
    cd ~/catkin_ws
    catkin_make
 3. Aggiungi il pacchetto al tuo ambiente ROS:
+   ```bash
    source devel/setup.bash
 
 ### Esecuzione
 
 
 1. Avvia il file di lancio: 
+   ```bash
    roslaunch <nome_pacchetto> arm.launch
 2. Apri RViz per visualizzare il braccio robotico e la trasformata:
+   ```bash
    rosrun rviz rviz -d $(rospack find <nome_pacchetto>)/rviz/arm_description.rviz
 3. Lo script tf_ef.py pubblicherà la trasformata tra "world" e "end effector", che può essere visualizzata in RViz.
 
