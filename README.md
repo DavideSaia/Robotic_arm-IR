@@ -6,17 +6,17 @@ Questo progetto ha l'obiettivo di implementare un braccio robotico in un ambient
 
 ## Struttura del Progetto
 
-Il progetto è organizzato come segue:
-├── CMakeLists.txt
-├── launch
-│ └── arm.launch
-├── package.xml
-├── rviz
-│ └── arm_description.rviz
-├── src
-│ └── tf_ef.py
-└── urdf
-└── robot_description.urdf.xacro
+Il progetto è organizzato come segue:<br>
+├── CMakeLists.txt <br>
+├── launch <br>
+│ └── arm.launch <br>
+├── package.xml <br>
+├── rviz <br>
+│ └── arm_description.rviz <br>
+├── src <br>
+│ └── tf_ef.py <br> 
+└── urdf <br>
+└── robot_description.urdf.xacro <br>
 
 
 ### File Principali
