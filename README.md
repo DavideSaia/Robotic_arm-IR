@@ -63,4 +63,4 @@ Il progetto è organizzato come segue:<br>
 
 ## Visualizzazione della Trasformata
 
-La trasformata tra il link "world" e l'"end effector" è visualizzata in RViz utilizzando il plugin TF. Questo permette di vedere la posizione e l'orientamento dell'"end effector" rispetto al sistema di riferimento globale.La trasformata tra il link "world" e l'"end effector" è visualizzata in RViz utilizzando il plugin TF. Questo permette di vedere la posizione e l'orientamento dell'"end effector" rispetto al sistema di riferimento globale.
+La trasformata tra il link "world" e l'"end effector" è visualizzata in RViz utilizzando il plugin TF. Questo permette di vedere la posizione e l'orientamento dell'"end effector" rispetto al sistema di riferimento globale.
